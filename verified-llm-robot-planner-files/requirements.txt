@@ -1,0 +1,9 @@
+# Bu dosya bir yer tutucudur.
+# Simülasyon ortamı ve yazılım yığını henüz seçilmedi.
+# Bu nedenle somut bağımlılık satırları eklenmemiştir.
+#
+# Karar verildikten sonra buraya sürümü belirtilmiş paketler yazılacaktır.
+# Aşağıdaki satırlar yalnızca örnek biçim içindir; kurulacak paket listesi değildir.
+#
+# # numpy
+# # rclpy
