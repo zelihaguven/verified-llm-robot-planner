@@ -1,0 +1,16 @@
+{
+  "locations": [
+    {"id": "kitchen_table",   "room": "kitchen", "reachable": true},
+    {"id": "kitchen_counter", "room": "kitchen", "reachable": true},
+    {"id": "office_desk",     "room": "office",  "reachable": true},
+    {"id": "office_shelf",    "room": "office",  "reachable": true}
+  ],
+  "objects": [
+    {"id": "mug_1",    "type": "mug",    "color": "red",   "location": "kitchen_table",   "properties": {"pickupable": true}},
+    {"id": "mug_2",    "type": "mug",    "color": "blue",  "location": "kitchen_counter", "properties": {"pickupable": true}},
+    {"id": "book_1",   "type": "book",   "color": "blue",  "location": "office_shelf",    "properties": {"pickupable": true}},
+    {"id": "laptop_1", "type": "laptop", "color": "gray",  "location": "office_desk",     "properties": {"pickupable": false}},
+    {"id": "drawer_1", "type": "drawer", "color": "white", "location": "office_desk",     "properties": {"pickupable": false, "openable": true, "open": false}}
+  ],
+  "robot": {"location": "kitchen_counter", "holding": null}
+}
