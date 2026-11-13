@@ -18,6 +18,7 @@ class Location(BaseModel):
     id: str                                   # örn. "kitchen_table"
     room: str                                 # örn. "kitchen"
     reachable: bool = True
+    door: str | None = None                   # varsa bu kapı (SceneObject.id) açık olmadan gidilemez
 
 
 class RobotState(BaseModel):

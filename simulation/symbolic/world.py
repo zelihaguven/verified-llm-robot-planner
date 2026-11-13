@@ -53,6 +53,10 @@ class SymbolicWorld(World):
             return SkillResult(success=False, reason="unknown_location")
         if not location.reachable:
             return SkillResult(success=False, reason="target_unreachable")
+        if location.door:
+            door = self._find_object(location.door)
+            if door is None or not door.properties.get("open", False):
+                return SkillResult(success=False, reason="door_closed")
         scene.robot.location = target
         if scene.robot.holding:  # tutulan nesne robotla birlikte taşınır
             self._find_object(scene.robot.holding).location = target

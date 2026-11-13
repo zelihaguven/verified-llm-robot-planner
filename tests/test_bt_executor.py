@@ -61,3 +61,20 @@ def test_render_shows_statuses():
     root.tick_once()
     text = render(root)
     assert "✕" in text and "1. pick object=mug_1" in text
+
+
+def test_open_door_then_fetch_book():
+    world = SymbolicWorld("apartment")
+    plan = [PlanStep(id=1, action="navigate", args={"target": "hallway"}),
+            PlanStep(id=2, action="open", args={"object": "door_bedroom"}),
+            PlanStep(id=3, action="navigate", args={"target": "bedroom_nightstand"}),
+            PlanStep(id=4, action="pick", args={"object": "book_1"})]
+    assert execute(plan, world).success
+    assert world.get_scene_graph().robot.holding == "book_1"
+
+
+def test_plan_without_opening_door_fails_with_reason():
+    world = SymbolicWorld("apartment")
+    plan = [PlanStep(id=1, action="navigate", args={"target": "bedroom_nightstand"})]
+    result = execute(plan, world)
+    assert result.failed_step == 1 and result.reason == "door_closed"

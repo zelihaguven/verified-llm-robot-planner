@@ -17,6 +17,7 @@ def test_scenes_are_valid_and_consistent():
         assert len(object_ids) == len(set(object_ids)), f"{path.name}: tekrar eden nesne id"
         assert all(obj.location in location_ids for obj in scene.objects), path.name
         assert scene.robot.location in location_ids, path.name
+        assert all(loc.door in object_ids for loc in scene.locations if loc.door), path.name
 
 
 def test_prd_plan_example_parses():

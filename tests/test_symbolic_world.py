@@ -97,3 +97,16 @@ def test_reset_restores_scene(world):
 def test_requires_reset():
     with pytest.raises(RuntimeError):
         SymbolicWorld().get_scene_graph()
+
+
+def test_closed_door_blocks_navigation_until_opened():
+    world = SymbolicWorld("apartment")
+    assert world.execute_skill("navigate", {"target": "bedroom_nightstand"}).reason == "door_closed"
+    assert world.execute_skill("navigate", {"target": "hallway"}).success
+    assert world.execute_skill("open", {"object": "door_bedroom"}).success
+    assert world.execute_skill("navigate", {"target": "bedroom_nightstand"}).success
+
+
+def test_new_scenes_load():
+    for scene_id in ("apartment", "office"):
+        assert SymbolicWorld(scene_id).get_scene_graph().objects
