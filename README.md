@@ -130,18 +130,76 @@ Geliştirme dili olarak Python öngörülmektedir. Somut paket listesi `requirem
 
 ## 07 Kurulum ve projeyi çalıştırma adımları
 
-Bu bölüm bir yer tutucudur. Simülasyon ortamı seçilmeden somut kurulum ve çalıştırma adımları yazılamaz.
+Şu an Seviye 1 sembolik dünya ve Behavior Tree yürütücüsü çalışıyor. Dil (LLM), algılama (VLM) ve doğrulama modülleri henüz eklenmedi; AI2-THOR (Seviye 2) macOS'ta test edilecek.
 
-Karar verildikten sonra burada şunlar yer alacaktır:
+### Çalışan parçalar
 
-1. Desteklenen işletim sistemi ve donanım notları
-2. Depoyu klonlama
-3. Python ortamı ve `requirements.txt` ile bağımlılık kurulumu
-4. Seçilen simülasyon ortamının kurulumu
-5. Örnek bir sahnenin veya görevin çalıştırılması
-6. Çıktıların `results/` altına nasıl kaydedileceği
+| Dosya | Ne yapar |
+| --- | --- |
+| `src/interfaces/schemas.py` | Modüller arası veri formatları: sahne, plan, grounding, doğrulama kararı, yürütme sonucu |
+| `src/interfaces/world.py` | Her simülatörün uyguladığı `World` arayüzü |
+| `simulation/symbolic/world.py` | Sembolik dünya: `navigate`, `pick`, `place`, `open`, `close`. Ön koşul sağlanmazsa sahne değişmez ve nedeni döner (ör. `robot_not_at_object`, `hand_full`, `door_closed`) |
+| `simulation/symbolic/scenes/` | Üç sahne: `home_office`, `apartment`, `office` |
+| `src/execution/bt_executor.py` | Planı `py_trees` ile yürütür. Her adım "zaten sağlandı mı? → değilse yap" kalıbıyla sarılır; ilk başarısız adımda durur ve ağacı terminalde çizer |
+| `tests/` | Tüm modüllerin testleri |
 
-Şu an çalıştırılacak bir uygulama veya simülasyon paketi yoktur.
+### Sahneler
+
+| Sahne | İçerik | Kapsadığı senaryolar |
+| --- | --- | --- |
+| `home_office` | Mutfak ve ofis; kırmızı ve mavi kupa, dizüstü bilgisayar, çekmece | Çok adımlı görev, muğlak komut ("kupayı getir") |
+| `apartment` | Mutfak, oturma odası, koridor, kapısı kapalı yatak odası; sıcak kahve, dizüstü bilgisayar, kırmızı ve mavi kitap | Engellenmiş hedef (kapalı kapı), yanlış nesne, güvensiz komut, ortamla çelişen komut (elma yok) |
+| `office` | Resepsiyon, toplantı odası, koridor, kapısı kapalı depo, ulaşılamayan balkon; iki aynı beyaz bardak | Muğlak komut, engellenmiş hedef |
+
+### Gereksinimler
+
+Python 3.11 (3.12 ile de test edildi) ve Git. GPU gerekmez.
+
+### Kurulum
+
+macOS:
+
+```bash
+git clone https://github.com/zelihaguven/verified-llm-robot-planner.git
+cd verified-llm-robot-planner
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Windows (PowerShell):
+
+```powershell
+git clone https://github.com/zelihaguven/verified-llm-robot-planner.git
+cd verified-llm-robot-planner
+py -3.11 -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### Testleri çalıştırma
+
+```bash
+pytest -v
+```
+
+Tüm testlerin `PASSED` görünmesi gerekir.
+
+### Örnek: bir planı Behavior Tree ile çalıştırma
+
+Terminalde `python` yazıp `>>>` satırına aşağıdakini yapıştırın. Robot kapalı kapı yüzünden önce başarısız olur, ikinci planda kapıyı açıp kitabı alır:
+
+```python
+from simulation.symbolic.world import SymbolicWorld
+from src.execution.bt_executor import execute
+from src.interfaces import PlanStep
+plan = [PlanStep(id=1, action="navigate", args={"target": "bedroom_nightstand"}), PlanStep(id=2, action="pick", args={"object": "book_1"})]
+print(execute(plan, SymbolicWorld("apartment"), on_tick=print))
+plan = [PlanStep(id=1, action="navigate", args={"target": "hallway"}), PlanStep(id=2, action="open", args={"object": "door_bedroom"}), PlanStep(id=3, action="navigate", args={"target": "bedroom_nightstand"}), PlanStep(id=4, action="pick", args={"object": "book_1"})]
+print(execute(plan, SymbolicWorld("apartment"), on_tick=print))
+```
+
+Ağaçta ✓ başarılı, ✕ başarısız, `-` hiç çalışmamış demektir. "zaten sağlandı mı?" satırındaki ✕ hata değildir: adımın hedefi henüz gerçekleşmediği için eylemin yapılması gerektiğini gösterir.
 
 ## 08 Test, deney, metrik ve örnek çıktılar
 
