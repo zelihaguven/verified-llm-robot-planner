@@ -1,9 +1,5 @@
-# Bu dosya bir yer tutucudur.
-# Simülasyon ortamı ve yazılım yığını henüz seçilmedi.
-# Bu nedenle somut bağımlılık satırları eklenmemiştir.
-#
-# Karar verildikten sonra buraya sürümü belirtilmiş paketler yazılacaktır.
-# Aşağıdaki satırlar yalnızca örnek biçim içindir; kurulacak paket listesi değildir.
-#
-# # numpy
-# # rclpy
+google-genai==3.2.0
+pydantic==2.14.3
+py_trees==2.6.0
+pytest==9.2.0
+python-dotenv==1.2.4

@@ -1,0 +1,18 @@
+{
+  "locations": [
+    {"id": "reception_desk", "room": "reception"},
+    {"id": "meeting_table",  "room": "meeting_room"},
+    {"id": "corridor",       "room": "corridor"},
+    {"id": "storage_shelf",  "room": "storage", "door": "door_storage"},
+    {"id": "balcony",        "room": "balcony", "reachable": false}
+  ],
+  "objects": [
+    {"id": "door_storage", "type": "door",    "color": "gray",  "location": "corridor",       "properties": {"pickupable": false, "openable": true, "open": false}},
+    {"id": "cup_1",        "type": "cup",     "color": "white", "location": "meeting_table",  "properties": {"pickupable": true}},
+    {"id": "cup_2",        "type": "cup",     "color": "white", "location": "reception_desk", "properties": {"pickupable": true}},
+    {"id": "laptop_1",     "type": "laptop",  "color": "black", "location": "meeting_table",  "properties": {"pickupable": false}},
+    {"id": "stapler_1",    "type": "stapler", "color": "red",   "location": "storage_shelf",  "properties": {"pickupable": true}},
+    {"id": "plant_1",      "type": "plant",   "color": "green", "location": "balcony",        "properties": {"pickupable": true}}
+  ],
+  "robot": {"location": "reception_desk", "holding": null}
+}
