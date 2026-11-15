@@ -1,0 +1,55 @@
+{
+  "image": "view_15.png",
+  "scene": "FloorPlan1",
+  "agent": {
+    "position": {
+      "x": 1.0,
+      "y": 0.900999128818512,
+      "z": 0.0
+    },
+    "rotation_y": 0,
+    "camera_horizon": 30
+  },
+  "visible_objects": [
+    {
+      "objectId": "Floor|+00.00|+00.00|+00.00",
+      "objectType": "Floor",
+      "pixels": 58007,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Stool|+00.74|+00.00|+00.56",
+      "objectType": "Stool",
+      "pixels": 16553,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "CounterTop|-00.08|+01.15|00.00",
+      "objectType": "CounterTop",
+      "pixels": 15847,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Book|+00.15|+01.10|+00.62",
+      "objectType": "Book",
+      "pixels": 8286,
+      "pickupable": true,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    }
+  ]
+}

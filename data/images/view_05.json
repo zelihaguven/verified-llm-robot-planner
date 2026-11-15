@@ -1,0 +1,151 @@
+{
+  "image": "view_05.png",
+  "scene": "FloorPlan1",
+  "agent": {
+    "position": {
+      "x": -0.25,
+      "y": 0.900999128818512,
+      "z": 1.25
+    },
+    "rotation_y": 270,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "Fridge|-02.10|+00.00|+01.07",
+      "objectType": "Fridge",
+      "pixels": 46286,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Window|-02.23|+01.43|-01.20",
+      "objectType": "Window",
+      "pixels": 15174,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Cabinet|-01.85|+02.02|+00.38",
+      "objectType": "Cabinet",
+      "pixels": 10373,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Cabinet|-01.55|+00.50|+00.38",
+      "objectType": "Cabinet",
+      "pixels": 6295,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "GarbageCan|-01.94|00.00|+02.03",
+      "objectType": "GarbageCan",
+      "pixels": 5891,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "CoffeeMachine|-01.98|+00.90|-00.19",
+      "objectType": "CoffeeMachine",
+      "pixels": 5047,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ]
+    },
+    {
+      "objectId": "Drawer|-01.56|+00.66|-00.20",
+      "objectType": "Drawer",
+      "pixels": 4668,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "CounterTop|-01.87|+00.95|-01.21",
+      "objectType": "CounterTop",
+      "pixels": 3848,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Drawer|-01.56|+00.33|-00.20",
+      "objectType": "Drawer",
+      "pixels": 2333,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Toaster|-01.84|+00.90|+00.13",
+      "objectType": "Toaster",
+      "pixels": 2231,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ]
+    },
+    {
+      "objectId": "Floor|+00.00|+00.00|+00.00",
+      "objectType": "Floor",
+      "pixels": 1968,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Drawer|-01.56|+00.84|-00.20",
+      "objectType": "Drawer",
+      "pixels": 1398,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Drawer|-01.56|+00.84|+00.20",
+      "objectType": "Drawer",
+      "pixels": 1255,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Mug|-01.76|+00.90|-00.62",
+      "objectType": "Mug",
+      "pixels": 508,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ]
+    }
+  ]
+}

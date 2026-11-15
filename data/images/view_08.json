@@ -1,0 +1,238 @@
+{
+  "image": "view_08.png",
+  "scene": "FloorPlan1",
+  "agent": {
+    "position": {
+      "x": -1.25,
+      "y": 0.900999128818512,
+      "z": 0.5
+    },
+    "rotation_y": 180,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "CoffeeMachine|-01.98|+00.90|-00.19",
+      "objectType": "CoffeeMachine",
+      "pixels": 28627,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ]
+    },
+    {
+      "objectId": "Window|-02.23|+01.43|-01.20",
+      "objectType": "Window",
+      "pixels": 26322,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Cabinet|-01.85|+02.02|+00.38",
+      "objectType": "Cabinet",
+      "pixels": 25688,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Floor|+00.00|+00.00|+00.00",
+      "objectType": "Floor",
+      "pixels": 13924,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "CounterTop|-00.08|+01.15|00.00",
+      "objectType": "CounterTop",
+      "pixels": 12588,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "CounterTop|-01.87|+00.95|-01.21",
+      "objectType": "CounterTop",
+      "pixels": 9338,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Cabinet|-01.18|+00.50|-02.20",
+      "objectType": "Cabinet",
+      "pixels": 4758,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Bread|-00.52|+01.17|-00.03",
+      "objectType": "Bread",
+      "pixels": 4405,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    },
+    {
+      "objectId": "Cabinet|+00.72|+02.02|-02.46",
+      "objectType": "Cabinet",
+      "pixels": 2479,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Cabinet|-01.69|+02.02|-02.46",
+      "objectType": "Cabinet",
+      "pixels": 2415,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Cabinet|+00.68|+02.02|-02.46",
+      "objectType": "Cabinet",
+      "pixels": 2414,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Cabinet|-00.73|+02.02|-02.46",
+      "objectType": "Cabinet",
+      "pixels": 2356,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Sink|-01.90|+00.97|-01.50",
+      "objectType": "Sink",
+      "pixels": 1763,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Microwave|-00.24|+01.69|-02.53",
+      "objectType": "Microwave",
+      "pixels": 1626,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Cabinet|-01.55|+00.50|-01.97",
+      "objectType": "Cabinet",
+      "pixels": 1463,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "ShelvingUnit|+01.75|+00.01|-02.56",
+      "objectType": "ShelvingUnit",
+      "pixels": 1285,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Bowl|+00.27|+01.10|-00.75",
+      "objectType": "Bowl",
+      "pixels": 1039,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    },
+    {
+      "objectId": "Lettuce|-01.81|+00.97|-00.94",
+      "objectType": "Lettuce",
+      "pixels": 819,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ]
+    },
+    {
+      "objectId": "Mug|-01.76|+00.90|-00.62",
+      "objectType": "Mug",
+      "pixels": 747,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ]
+    },
+    {
+      "objectId": "CounterTop|+00.69|+00.95|-02.48",
+      "objectType": "CounterTop",
+      "pixels": 639,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "HousePlant|-01.95|+00.89|-02.52",
+      "objectType": "HousePlant",
+      "pixels": 607,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ]
+    },
+    {
+      "objectId": "PaperTowelRoll|-02.06|+01.01|-00.81",
+      "objectType": "PaperTowelRoll",
+      "pixels": 537,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ]
+    },
+    {
+      "objectId": "Cabinet|+00.68|+00.50|-02.20",
+      "objectType": "Cabinet",
+      "pixels": 506,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    }
+  ]
+}

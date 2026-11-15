@@ -1,0 +1,221 @@
+{
+  "image": "view_12.png",
+  "scene": "FloorPlan1",
+  "agent": {
+    "position": {
+      "x": 1.25,
+      "y": 0.900999128818512,
+      "z": 0.25
+    },
+    "rotation_y": 180,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "Floor|+00.00|+00.00|+00.00",
+      "objectType": "Floor",
+      "pixels": 25092,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "CounterTop|-00.08|+01.15|00.00",
+      "objectType": "CounterTop",
+      "pixels": 8565,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Stool|+00.70|+00.00|-00.51",
+      "objectType": "Stool",
+      "pixels": 4291,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Cabinet|+00.68|+00.50|-02.20",
+      "objectType": "Cabinet",
+      "pixels": 3524,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Cabinet|-01.69|+02.02|-02.46",
+      "objectType": "Cabinet",
+      "pixels": 3014,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Cabinet|+00.68|+02.02|-02.46",
+      "objectType": "Cabinet",
+      "pixels": 2881,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Cabinet|-00.73|+02.02|-02.46",
+      "objectType": "Cabinet",
+      "pixels": 2870,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Cabinet|+00.72|+02.02|-02.46",
+      "objectType": "Cabinet",
+      "pixels": 2814,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "ShelvingUnit|+01.75|+00.01|-02.56",
+      "objectType": "ShelvingUnit",
+      "pixels": 2362,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Microwave|-00.24|+01.69|-02.53",
+      "objectType": "Microwave",
+      "pixels": 2080,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Bowl|+00.27|+01.10|-00.75",
+      "objectType": "Bowl",
+      "pixels": 1583,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    },
+    {
+      "objectId": "CounterTop|-01.87|+00.95|-01.21",
+      "objectType": "CounterTop",
+      "pixels": 1537,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Cabinet|-01.18|+00.50|-02.20",
+      "objectType": "Cabinet",
+      "pixels": 1487,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Shelf|+01.75|+00.17|-02.56",
+      "objectType": "Shelf",
+      "pixels": 1084,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "HousePlant|-01.95|+00.89|-02.52",
+      "objectType": "HousePlant",
+      "pixels": 906,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ]
+    },
+    {
+      "objectId": "CounterTop|+00.69|+00.95|-02.48",
+      "objectType": "CounterTop",
+      "pixels": 876,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Drawer|+00.95|+00.39|-02.20",
+      "objectType": "Drawer",
+      "pixels": 814,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Drawer|+00.95|+00.22|-02.20",
+      "objectType": "Drawer",
+      "pixels": 767,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Drawer|+00.95|+00.56|-02.20",
+      "objectType": "Drawer",
+      "pixels": 767,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Shelf|+01.75|+00.55|-02.56",
+      "objectType": "Shelf",
+      "pixels": 613,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Drawer|+00.95|+00.83|-02.20",
+      "objectType": "Drawer",
+      "pixels": 575,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Drawer|+00.95|+00.71|-02.20",
+      "objectType": "Drawer",
+      "pixels": 575,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    }
+  ]
+}
