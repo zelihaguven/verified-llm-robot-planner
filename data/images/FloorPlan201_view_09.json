@@ -1,0 +1,101 @@
+{
+  "image": "FloorPlan201_view_09.png",
+  "scene": "FloorPlan201",
+  "agent": {
+    "position": {
+      "x": -2.25,
+      "y": 0.9026566743850708,
+      "z": 4.25
+    },
+    "rotation_y": 0,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "ArmChair|-00.85|+00.00|+05.98",
+      "objectType": "ArmChair",
+      "pixels": 28059,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Curtains|-00.08|+02.42|+00.97",
+      "objectType": "Curtains",
+      "pixels": 19234,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "ArmChair|-04.38|+00.00|+06.02",
+      "objectType": "ArmChair",
+      "pixels": 19075,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Floor|+00.00|+00.38|+00.00",
+      "objectType": "Floor",
+      "pixels": 19044,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Television|-02.36|+01.21|+06.24",
+      "objectType": "Television",
+      "pixels": 10129,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "TVStand|-02.39|+00.01|+06.30"
+      ]
+    },
+    {
+      "objectId": "TVStand|-02.39|+00.01|+06.30",
+      "objectType": "TVStand",
+      "pixels": 7158,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Shelf|-02.39|+00.24|+06.30",
+      "objectType": "Shelf",
+      "pixels": 5423,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Box|-03.36|+00.19|+06.43",
+      "objectType": "Box",
+      "pixels": 3492,
+      "pickupable": true,
+      "openable": true,
+      "isOpen": true,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "image": "FloorPlan201_view_12.png",
+  "scene": "FloorPlan201",
+  "agent": {
+    "position": {
+      "x": -1.0,
+      "y": 0.9026566743850708,
+      "z": 2.0
+    },
+    "rotation_y": 180,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "Curtains|-00.08|+02.42|+00.97",
+      "objectType": "Curtains",
+      "pixels": 58178,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Window|-00.06|+00.93|+01.76",
+      "objectType": "Window",
+      "pixels": 19281,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Floor|+00.00|+00.38|+00.00",
+      "objectType": "Floor",
+      "pixels": 16108,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Painting|-02.05|+01.62|-00.30",
+      "objectType": "Painting",
+      "pixels": 10880,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "FloorLamp|-00.57|+00.00|+00.02",
+      "objectType": "FloorLamp",
+      "pixels": 6132,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Chair|-01.86|+00.02|+01.04",
+      "objectType": "Chair",
+      "pixels": 4940,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Book|-01.87|+00.68|+01.17",
+      "objectType": "Book",
+      "pixels": 4600,
+      "pickupable": true,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Chair|-01.86|+00.02|+01.04",
+        "DiningTable|-02.27|-00.02|+01.42"
+      ]
+    },
+    {
+      "objectId": "Chair|-02.51|+00.02|+00.99",
+      "objectType": "Chair",
+      "pixels": 4414,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "DiningTable|-02.27|-00.02|+01.42",
+      "objectType": "DiningTable",
+      "pixels": 4139,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Chair|-02.52|+00.02|+01.88",
+        "Chair|-01.86|+00.02|+01.04",
+        "Chair|-01.34|+00.02|+01.43",
+        "Chair|-01.86|+00.02|+01.84",
+        "Chair|-02.51|+00.02|+00.99",
+        "Chair|-03.12|+00.02|+01.41",
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "SideTable|-02.11|+00.00|-00.14",
+      "objectType": "SideTable",
+      "pixels": 3951,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Drawer|-02.11|+00.65|-00.07",
+      "objectType": "Drawer",
+      "pixels": 1626,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "SideTable|-02.94|+00.00|-00.10",
+      "objectType": "SideTable",
+      "pixels": 1297,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "HousePlant|-02.93|+00.60|-00.09",
+      "objectType": "HousePlant",
+      "pixels": 847,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "SideTable|-02.94|+00.00|-00.10"
+      ]
+    }
+  ]
+}

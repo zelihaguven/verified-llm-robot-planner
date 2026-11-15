@@ -1,0 +1,163 @@
+{
+  "image": "FloorPlan201_view_11.png",
+  "scene": "FloorPlan201",
+  "agent": {
+    "position": {
+      "x": -0.25,
+      "y": 0.9026566743850708,
+      "z": 2.0
+    },
+    "rotation_y": 0,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "Window|-00.06|+00.93|+01.76",
+      "objectType": "Window",
+      "pixels": 99337,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Curtains|-00.08|+02.42|+00.97",
+      "objectType": "Curtains",
+      "pixels": 32840,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Sofa|-02.40|00.00|+03.42",
+      "objectType": "Sofa",
+      "pixels": 24695,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Floor|+00.00|+00.38|+00.00",
+      "objectType": "Floor",
+      "pixels": 16466,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "ArmChair|-04.38|+00.00|+06.02",
+      "objectType": "ArmChair",
+      "pixels": 5469,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "SideTable|-00.25|+00.00|+03.37",
+      "objectType": "SideTable",
+      "pixels": 4716,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "ArmChair|-00.85|+00.00|+05.98",
+      "objectType": "ArmChair",
+      "pixels": 3225,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Television|-02.36|+01.21|+06.24",
+      "objectType": "Television",
+      "pixels": 2201,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "TVStand|-02.39|+00.01|+06.30"
+      ]
+    },
+    {
+      "objectId": "CoffeeTable|-02.33|+00.00|+04.92",
+      "objectType": "CoffeeTable",
+      "pixels": 1500,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "DeskLamp|-00.27|+00.70|+03.61",
+      "objectType": "DeskLamp",
+      "pixels": 1426,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "SideTable|-00.25|+00.00|+03.37"
+      ]
+    },
+    {
+      "objectId": "TVStand|-02.39|+00.01|+06.30",
+      "objectType": "TVStand",
+      "pixels": 1196,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Shelf|-02.33|+00.34|+04.92",
+      "objectType": "Shelf",
+      "pixels": 942,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Vase|-00.26|+00.70|+03.41",
+      "objectType": "Vase",
+      "pixels": 788,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "SideTable|-00.25|+00.00|+03.37"
+      ]
+    },
+    {
+      "objectId": "Shelf|-02.33|+00.09|+04.92",
+      "objectType": "Shelf",
+      "pixels": 663,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    }
+  ]
+}

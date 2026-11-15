@@ -1,0 +1,53 @@
+{
+  "image": "FloorPlan301_view_15.png",
+  "scene": "FloorPlan301",
+  "agent": {
+    "position": {
+      "x": 2.75,
+      "y": 0.910415768623352,
+      "z": 1.25
+    },
+    "rotation_y": 0,
+    "camera_horizon": 30
+  },
+  "visible_objects": [
+    {
+      "objectId": "Mirror|+01.99|+01.38|+01.88",
+      "objectType": "Mirror",
+      "pixels": 30841,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Floor|+00.00|+00.00|+00.00",
+      "objectType": "Floor",
+      "pixels": 19939,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "BaseballBat|+02.84|+00.29|+01.82",
+      "objectType": "BaseballBat",
+      "pixels": 2034,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "LightSwitch|+02.66|+01.28|+01.90",
+      "objectType": "LightSwitch",
+      "pixels": 1338,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    }
+  ]
+}

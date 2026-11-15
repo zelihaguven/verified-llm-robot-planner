@@ -1,0 +1,117 @@
+{
+  "image": "FloorPlan201_view_06.png",
+  "scene": "FloorPlan201",
+  "agent": {
+    "position": {
+      "x": -3.25,
+      "y": 0.9026566743850708,
+      "z": 5.75
+    },
+    "rotation_y": 180,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "Sofa|-02.40|00.00|+03.42",
+      "objectType": "Sofa",
+      "pixels": 42862,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Floor|+00.00|+00.38|+00.00",
+      "objectType": "Floor",
+      "pixels": 35147,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Curtains|-00.08|+02.42|+00.97",
+      "objectType": "Curtains",
+      "pixels": 17598,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Window|-00.06|+00.93|+01.76",
+      "objectType": "Window",
+      "pixels": 5716,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "CoffeeTable|-02.33|+00.00|+04.92",
+      "objectType": "CoffeeTable",
+      "pixels": 3460,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Pillow|-03.15|+00.68|+03.42",
+      "objectType": "Pillow",
+      "pixels": 1725,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Sofa|-02.40|00.00|+03.42"
+      ]
+    },
+    {
+      "objectId": "Bowl|-02.45|+00.60|+04.79",
+      "objectType": "Bowl",
+      "pixels": 1623,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CoffeeTable|-02.33|+00.00|+04.92"
+      ]
+    },
+    {
+      "objectId": "Painting|-02.05|+01.62|-00.30",
+      "objectType": "Painting",
+      "pixels": 1551,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "SideTable|-00.25|+00.00|+03.37",
+      "objectType": "SideTable",
+      "pixels": 963,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Drawer|-00.31|+00.63|+03.37",
+      "objectType": "Drawer",
+      "pixels": 623,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    }
+  ]
+}

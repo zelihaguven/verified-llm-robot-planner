@@ -1,0 +1,85 @@
+{
+  "image": "FloorPlan201_view_08.png",
+  "scene": "FloorPlan201",
+  "agent": {
+    "position": {
+      "x": -2.75,
+      "y": 0.9026566743850708,
+      "z": 2.5
+    },
+    "rotation_y": 270,
+    "camera_horizon": 30
+  },
+  "visible_objects": [
+    {
+      "objectId": "Floor|+00.00|+00.38|+00.00",
+      "objectType": "Floor",
+      "pixels": 77008,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Sofa|-02.40|00.00|+03.42",
+      "objectType": "Sofa",
+      "pixels": 44074,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "DiningTable|-02.27|-00.02|+01.42",
+      "objectType": "DiningTable",
+      "pixels": 9012,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Chair|-02.52|+00.02|+01.88",
+        "Chair|-01.86|+00.02|+01.04",
+        "Chair|-01.34|+00.02|+01.43",
+        "Chair|-01.86|+00.02|+01.84",
+        "Chair|-02.51|+00.02|+00.99",
+        "Chair|-03.12|+00.02|+01.41",
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Chair|-03.12|+00.02|+01.41",
+      "objectType": "Chair",
+      "pixels": 8013,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "GarbageCan|-04.86|00.00|+00.27",
+      "objectType": "GarbageCan",
+      "pixels": 2927,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "ArmChair|-04.38|+00.00|+06.02",
+      "objectType": "ArmChair",
+      "pixels": 611,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    }
+  ]
+}

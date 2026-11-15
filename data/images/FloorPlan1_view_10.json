@@ -1,0 +1,139 @@
+{
+  "image": "FloorPlan1_view_10.png",
+  "scene": "FloorPlan1",
+  "agent": {
+    "position": {
+      "x": 0.75,
+      "y": 0.900999128818512,
+      "z": -1.75
+    },
+    "rotation_y": 0,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "Floor|+00.00|+00.00|+00.00",
+      "objectType": "Floor",
+      "pixels": 23806,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "CounterTop|-00.08|+01.15|00.00",
+      "objectType": "CounterTop",
+      "pixels": 20733,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Fridge|-02.10|+00.00|+01.07",
+      "objectType": "Fridge",
+      "pixels": 10920,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Stool|+00.70|+00.00|-00.51",
+      "objectType": "Stool",
+      "pixels": 7306,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Cabinet|-01.85|+02.02|+00.38",
+      "objectType": "Cabinet",
+      "pixels": 2752,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Stool|+00.74|+00.00|+00.56",
+      "objectType": "Stool",
+      "pixels": 1844,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Bowl|+00.27|+01.10|-00.75",
+      "objectType": "Bowl",
+      "pixels": 1370,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    },
+    {
+      "objectId": "Tomato|-00.39|+01.14|-00.81",
+      "objectType": "Tomato",
+      "pixels": 797,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    },
+    {
+      "objectId": "Bread|-00.52|+01.17|-00.03",
+      "objectType": "Bread",
+      "pixels": 772,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    },
+    {
+      "objectId": "Drawer|-01.56|+00.84|+00.20",
+      "objectType": "Drawer",
+      "pixels": 637,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Toaster|-01.84|+00.90|+00.13",
+      "objectType": "Toaster",
+      "pixels": 637,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ]
+    },
+    {
+      "objectId": "Book|+00.15|+01.10|+00.62",
+      "objectType": "Book",
+      "pixels": 601,
+      "pickupable": true,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    }
+  ]
+}

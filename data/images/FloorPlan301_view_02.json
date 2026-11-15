@@ -1,0 +1,66 @@
+{
+  "image": "FloorPlan301_view_02.png",
+  "scene": "FloorPlan301",
+  "agent": {
+    "position": {
+      "x": 2.75,
+      "y": 0.910415768623352,
+      "z": -0.5
+    },
+    "rotation_y": 0,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "Floor|+00.00|+00.00|+00.00",
+      "objectType": "Floor",
+      "pixels": 13075,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Bed|-00.64|+00.01|+00.87",
+      "objectType": "Bed",
+      "pixels": 4376,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Mirror|+01.99|+01.38|+01.88",
+      "objectType": "Mirror",
+      "pixels": 3696,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Box|+02.73|+00.20|+00.89",
+      "objectType": "Box",
+      "pixels": 2182,
+      "pickupable": true,
+      "openable": true,
+      "isOpen": true,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "BaseballBat|+02.84|+00.29|+01.82",
+      "objectType": "BaseballBat",
+      "pixels": 505,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    }
+  ]
+}
