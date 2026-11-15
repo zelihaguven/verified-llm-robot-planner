@@ -119,7 +119,7 @@ Sembolik dünya ve Behavior Tree yürütücüsü uygulandı (bkz. 07); dil, alg�
 **Karar: katmanlı simülasyon.** Sistem `World` arayüzü (`src/interfaces/world.py`) sayesinde simülatörden bağımsızdır.
 
 - **Seviye 1, sembolik dünya** (`simulation/symbolic/`): JSON sahne üzerinde çalışır, her bilgisayarda kurulumsuz çalışır. Deneyler tekrarlanabilirlik için burada koşulur.
-- **Seviye 2, AI2-THOR:** Görsel kanıt (kamera görüntüsü) ve demo için. Hazır ev sahneleri, durumu değiştirilebilir nesneler ve yüksek seviye "aç, al, bırak" eylemleri sunar; her eylemden sonra nesne konum ve durumlarını döndürür (Kolve vd., 2017). macOS'ta test edilecek; çalışmazsa PyBullet kullanılacak.
+- **Seviye 2, AI2-THOR:** Görsel kanıt (kamera görüntüsü) ve demo için. Hazır ev sahneleri, durumu değiştirilebilir nesneler ve yüksek seviye "aç, al, bırak" eylemleri sunar; her eylemden sonra nesne konum ve durumlarını döndürür (Kolve vd., 2017). macOS'ta test edildi: AI2-THOR 5.0.0, Apple Silicon'da Intel build'i Rosetta ile çalışıyor. Seviye 2 simülatörü AI2-THOR olarak kesinleşti.
 - **Seviye 3 (opsiyonel):** ROS 2 + Gazebo veya Isaac Sim ile taşınabilirlik denemesi.
 
 Gerekçe: Ekipte macOS ve Windows bilgisayarlar var ve NVIDIA GPU garantisi yok. Projenin katkısı dil, doğrulama ve yürütme zinciri olduğu için fizik gerçekçiliği ikincil. Benzer şekilde, BT literatüründe davranış önce fiziği hesaba katmayan basit bir simülatörde geliştirilip sonra fizikli simülatörde doğrulanıyor (Iovino & Smith, 2023).
@@ -146,11 +146,11 @@ Rapordaki sonuçların tekrarlanabilmesi için sürümler burada tutulur; bir s�
 | python-dotenv | 1.2.4 | API anahtarı `.env` dosyasından okunur |
 | pytest | 9.2.0 | Testler |
 | LLM ve VLM | Gemini API, ücretsiz katman: model henüz seçilmedi | Seçilince tam model adı, erişim tarihi ve `temperature` değeri yazılacak |
-| Seviye 2 simülatör | AI2-THOR: sürüm macOS testinden sonra yazılacak | Yedek: PyBullet |
+| Seviye 2 simülatör | AI2-THOR 5.0.0 | macOS Apple Silicon'da Intel build'i (`thor-OSXIntel64`) Rosetta ile çalışıyor. `FloorPlan1` açıldı, kamera görüntüsü ve nesne metadata'sı alındı; `AI2ThorWorld` ile 37 test geçti (ai2thor kurulu değilken 32 test geçer, AI2-THOR testleri atlanır). Windows'ta denenmedi. PyBullet'e gerek kalmadı |
 
 ## 07 Kurulum ve projeyi çalıştırma adımları
 
-Şu an Seviye 1 sembolik dünya ve Behavior Tree yürütücüsü çalışıyor. Dil (LLM), algılama (VLM) ve doğrulama modülleri henüz eklenmedi; AI2-THOR (Seviye 2) macOS'ta test edilecek.
+Şu an Seviye 1 sembolik dünya, Seviye 2 AI2-THOR adaptörü (isteğe bağlı) ve Behavior Tree yürütücüsü çalışıyor. Dil (LLM), algılama (VLM) ve doğrulama modülleri henüz eklenmedi.
 
 ### Çalışan parçalar
 
@@ -160,6 +160,8 @@ Rapordaki sonuçların tekrarlanabilmesi için sürümler burada tutulur; bir s�
 | `src/interfaces/world.py` | Her simülatörün uyguladığı `World` arayüzü |
 | `simulation/symbolic/world.py` | Sembolik dünya: `navigate`, `pick`, `place`, `open`, `close`. Ön koşul sağlanmazsa sahne değişmez ve nedeni döner (ör. `robot_not_at_object`, `hand_full`, `door_closed`) |
 | `simulation/symbolic/scenes/` | Üç sahne: `home_office`, `apartment`, `office` |
+| `simulation/ai2thor/world.py` | AI2-THOR (iTHOR) üzerinde aynı `World` arayüzü. Konumlar sahnedeki sabit taşıyıcılardır (tezgah, buzdolabı vb.). Döndürebileceği başarısızlık nedenleri dosyanın başında listelidir |
+| `simulation/ai2thor/capture_images.py` | `data/images/` altına 15 farklı görüş açısından kamera görüntüsü ve her görüntüde görünen nesnelerin listesini (`.json`) kaydeder |
 | `src/execution/bt_executor.py` | Planı `py_trees` ile yürütür. Her adım "zaten sağlandı mı? → değilse yap" kalıbıyla sarılır; ilk başarısız adımda durur ve ağacı terminalde çizer |
 | `tests/` | Tüm modüllerin testleri |
 
@@ -221,6 +223,38 @@ print(execute(plan, SymbolicWorld("apartment"), on_tick=print))
 
 Ağaçta ✓ başarılı, ✕ başarısız, `-` hiç çalışmamış demektir. "zaten sağlandı mı?" satırındaki ✕ hata değildir: adımın hedefi henüz gerçekleşmediği için eylemin yapılması gerektiğini gösterir.
 
+### İsteğe bağlı: AI2-THOR (Seviye 2)
+
+Temel kurulum AI2-THOR gerektirmez. Görsel kanıt ve demo için ayrıca kurulur (`requirements.txt`'te yoktur); kurulu değilse `pytest` AI2-THOR testlerini otomatik atlar.
+
+```bash
+pip install ai2thor==5.0.0
+```
+
+İlk çalıştırmada AI2-THOR kendi Unity sürümünü indirir (internet gerekir). macOS Apple Silicon'da Intel build'i Rosetta ile çalışır.
+
+Örnek: kupayı bir tezgahtan diğerine taşıyan planı AI2-THOR'da çalıştırma. Terminalde `python` yazıp `>>>` satırına aşağıdakini yapıştırın:
+
+```python
+from simulation.ai2thor.world import AI2ThorWorld
+from src.execution.bt_executor import execute
+from src.interfaces import PlanStep
+world = AI2ThorWorld("FloorPlan1")
+mug = next(o.id for o in world.get_scene_graph().objects if o.type == "Mug")
+plan = [PlanStep(id=1, action="navigate", args={"target": "CounterTop|-01.87|+00.95|-01.21"}), PlanStep(id=2, action="pick", args={"object": mug}), PlanStep(id=3, action="navigate", args={"target": "CounterTop|+00.69|+00.95|-02.48"}), PlanStep(id=4, action="place", args={"target": "CounterTop|+00.69|+00.95|-02.48"})]
+print(execute(plan, world))
+print(next(o.location for o in world.get_scene_graph().objects if o.id == mug))
+world.close()
+```
+
+Beklenen çıktı: `success=True ...` ve kupanın yeni konumu `CounterTop|+00.69|+00.95|-02.48`.
+
+Görüntü kaydı (depo kökünden):
+
+```bash
+python -m simulation.ai2thor.capture_images
+```
+
 ## 08 Test, deney, metrik ve örnek çıktılar
 
 Deneyler henüz koşulmadı; sonuç satırları boş bırakılmıştır, uydurma sayı yazılmamıştır. Çıktılar [results/](results/) altına konacaktır.
@@ -263,8 +297,8 @@ Proje 16 Kasım – 20 Aralık 2026 arasında beş haftada tamamlanır.
 
 | Hafta | Tarih | Odak | Durum |
 | --- | --- | --- | --- |
-| 1 | 16–22 Kasım | Kurulum, ortak arayüzler, simülasyon kararı | Arayüzler ve sembolik dünya hazır (PR incelemede); AI2-THOR testi bekliyor |
-| 2 | 23–29 Kasım | Modüller (sahte veriyle) | Sembolik dünya (3 sahne) ve BT yürütücü hazır |
+| 1 | 16–22 Kasım | Kurulum, ortak arayüzler, simülasyon kararı | Arayüzler ve sembolik dünya hazır (PR incelemede); AI2-THOR macOS testi tamam |
+| 2 | 23–29 Kasım | Modüller (sahte veriyle) | Sembolik dünya (3 sahne), BT yürütücü ve AI2-THOR adaptörü hazır; Kişi 3 için 15 görüntü hazır |
 | 3 | 30 Kasım – 6 Aralık | Entegrasyon: uçtan uca görev | Başlamadı |
 | 4 | 7–13 Aralık | Deneyler ve demo | Başlamadı |
 | 5 | 14–20 Aralık | Rapor ve teslim | Başlamadı |
@@ -276,6 +310,7 @@ Proje 16 Kasım – 20 Aralık 2026 arasında beş haftada tamamlanır.
 | 2026-11-11 | Repo kuruldu, konu seçildi | Simülasyon ortamı kararı bekleniyor | Simülasyon ortamı seçimi ve literatür taraması |
 | 2026-11-12 | Proje planı ve 5 haftalık iş planı hazırlandı. Repo düzenlendi. Ortak veri formatları (`src/interfaces/`) ve sembolik dünya (`simulation/symbolic/`) yazıldı. | Simülasyon kararı katmanlı yapı olarak verildi (bkz. 06). Kod `interfaces-v1` PR'ında ekip incelemesini bekliyor. | Literatür taraması, Behavior Tree yürütücüsü |
 | 2026-11-13 | Behavior Tree ve simülasyon üzerine 6 kaynak okundu (bkz. 10). BT yürütücüsü (`src/execution/`) yazıldı. İki yeni sahne ve kapı kuralı eklendi. README güncellendi. 32 test geçiyor. | Testler, hafızasız kök Sequence'in tamamlanmış ara adımları tekrar çalıştırdığını gösterdi; kök hafızalı yapıldı (bkz. 04). AI2-THOR macOS testi yapılmadı. | AI2-THOR testi, PR'ın ekip onayıyla birleştirilmesi |
+| 2026-11-15 | AI2-THOR 5.0.0 macOS'ta (Apple Silicon, Rosetta) kuruldu ve `FloorPlan1` açıldı. `AI2ThorWorld` adaptörü (`simulation/ai2thor/`) yazıldı; `execute()` ile kupa taşıma planı AI2-THOR'da çalıştı. Kişi 3 için 15 görüntü ve görünen nesne listesi `data/images/` altına kaydedildi. README 06 ve 07 güncellendi. 37 test geçiyor (ai2thor kurulu değilken 32 geçer, AI2-THOR testleri atlanır). | Seviye 2 simülatörü AI2-THOR olarak kesinleşti. AI2-THOR Windows'ta denenmedi. | Değişikliklerin PR ile ekip onayına sunulması, Windows'ta atlama davranışının doğrulanması |
 
 ## 10 Araştırma kaynakları ve referanslar
 
