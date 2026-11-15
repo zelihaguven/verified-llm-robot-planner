@@ -1,0 +1,119 @@
+{
+  "image": "FloorPlan301_view_11.png",
+  "scene": "FloorPlan301",
+  "agent": {
+    "position": {
+      "x": 2.0,
+      "y": 0.910415768623352,
+      "z": 0.0
+    },
+    "rotation_y": 90,
+    "camera_horizon": 30
+  },
+  "visible_objects": [
+    {
+      "objectId": "Floor|+00.00|+00.00|+00.00",
+      "objectType": "Floor",
+      "pixels": 47368,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Chair|+02.43|+00.01|-00.99",
+      "objectType": "Chair",
+      "pixels": 16512,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Box|+02.73|+00.20|+00.89",
+      "objectType": "Box",
+      "pixels": 8347,
+      "pickupable": true,
+      "openable": true,
+      "isOpen": true,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Desk|+02.21|+00.01|-01.26",
+      "objectType": "Desk",
+      "pixels": 6446,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "GarbageCan|+02.84|+00.01|+00.22",
+      "objectType": "GarbageCan",
+      "pixels": 4025,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Shelf|+02.48|+00.92|-01.38",
+      "objectType": "Shelf",
+      "pixels": 1612,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Drawer|+02.82|+00.63|-01.18",
+      "objectType": "Drawer",
+      "pixels": 1108,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Mug|+02.82|+00.80|-01.22",
+      "objectType": "Mug",
+      "pixels": 1014,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Desk|+02.21|+00.01|-01.26"
+      ]
+    },
+    {
+      "objectId": "Drawer|+02.82|+00.41|-01.18",
+      "objectType": "Drawer",
+      "pixels": 876,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Drawer|+02.82|+00.19|-01.18",
+      "objectType": "Drawer",
+      "pixels": 502,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    }
+  ]
+}

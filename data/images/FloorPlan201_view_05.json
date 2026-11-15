@@ -1,0 +1,95 @@
+{
+  "image": "FloorPlan201_view_05.png",
+  "scene": "FloorPlan201",
+  "agent": {
+    "position": {
+      "x": -0.75,
+      "y": 0.9026566743850708,
+      "z": 3.5
+    },
+    "rotation_y": 90,
+    "camera_horizon": 30
+  },
+  "visible_objects": [
+    {
+      "objectId": "Curtains|-00.08|+02.42|+00.97",
+      "objectType": "Curtains",
+      "pixels": 210083,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Floor|+00.00|+00.38|+00.00",
+      "objectType": "Floor",
+      "pixels": 35076,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Window|-00.06|+01.13|+04.89",
+      "objectType": "Window",
+      "pixels": 18676,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "SideTable|-00.25|+00.00|+03.37",
+      "objectType": "SideTable",
+      "pixels": 12706,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "DeskLamp|-00.27|+00.70|+03.61",
+      "objectType": "DeskLamp",
+      "pixels": 10772,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "SideTable|-00.25|+00.00|+03.37"
+      ]
+    },
+    {
+      "objectId": "Window|-00.06|+00.93|+01.76",
+      "objectType": "Window",
+      "pixels": 8416,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Vase|-00.26|+00.70|+03.41",
+      "objectType": "Vase",
+      "pixels": 2411,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "SideTable|-00.25|+00.00|+03.37"
+      ]
+    },
+    {
+      "objectId": "Drawer|-00.31|+00.63|+03.37",
+      "objectType": "Drawer",
+      "pixels": 2206,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    }
+  ]
+}

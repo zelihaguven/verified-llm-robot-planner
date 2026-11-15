@@ -1,0 +1,184 @@
+{
+  "image": "FloorPlan301_view_06.png",
+  "scene": "FloorPlan301",
+  "agent": {
+    "position": {
+      "x": 0.5,
+      "y": 0.910415768623352,
+      "z": -0.5
+    },
+    "rotation_y": 90,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "Floor|+00.00|+00.00|+00.00",
+      "objectType": "Floor",
+      "pixels": 29330,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Desk|+02.21|+00.01|-01.26",
+      "objectType": "Desk",
+      "pixels": 19572,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Shelf|+01.80|+01.39|-01.38",
+      "objectType": "Shelf",
+      "pixels": 6198,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Box|+02.73|+00.20|+00.89",
+      "objectType": "Box",
+      "pixels": 2917,
+      "pickupable": true,
+      "openable": true,
+      "isOpen": true,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Chair|+02.43|+00.01|-00.99",
+      "objectType": "Chair",
+      "pixels": 2277,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Shelf|+01.80|+00.92|-01.38",
+      "objectType": "Shelf",
+      "pixels": 2105,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "GarbageCan|+02.84|+00.01|+00.22",
+      "objectType": "GarbageCan",
+      "pixels": 1681,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Drawer|+01.62|+00.63|-01.18",
+      "objectType": "Drawer",
+      "pixels": 1595,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Shelf|+02.25|+01.50|-01.38",
+      "objectType": "Shelf",
+      "pixels": 1570,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Shelf|+02.48|+00.92|-01.38",
+      "objectType": "Shelf",
+      "pixels": 1113,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Shelf|+02.70|+01.51|-01.38",
+      "objectType": "Shelf",
+      "pixels": 873,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Shelf|+02.48|+01.15|-01.38",
+      "objectType": "Shelf",
+      "pixels": 795,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Drawer|+01.94|+00.41|-01.18",
+      "objectType": "Drawer",
+      "pixels": 790,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Drawer|+01.94|+00.63|-01.18",
+      "objectType": "Drawer",
+      "pixels": 766,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "BaseballBat|+02.84|+00.29|+01.82",
+      "objectType": "BaseballBat",
+      "pixels": 668,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Drawer|+01.62|+00.41|-01.18",
+      "objectType": "Drawer",
+      "pixels": 575,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Drawer|+01.94|+00.19|-01.18",
+      "objectType": "Drawer",
+      "pixels": 524,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    }
+  ]
+}

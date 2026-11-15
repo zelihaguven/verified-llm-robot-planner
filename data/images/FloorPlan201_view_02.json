@@ -1,0 +1,132 @@
+{
+  "image": "FloorPlan201_view_02.png",
+  "scene": "FloorPlan201",
+  "agent": {
+    "position": {
+      "x": -0.5,
+      "y": 0.9026566743850708,
+      "z": 5.25
+    },
+    "rotation_y": 270,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "Sofa|-02.40|00.00|+03.42",
+      "objectType": "Sofa",
+      "pixels": 31923,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Floor|+00.00|+00.38|+00.00",
+      "objectType": "Floor",
+      "pixels": 23997,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "TVStand|-02.39|+00.01|+06.30",
+      "objectType": "TVStand",
+      "pixels": 10223,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Television|-02.36|+01.21|+06.24",
+      "objectType": "Television",
+      "pixels": 7810,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "TVStand|-02.39|+00.01|+06.30"
+      ]
+    },
+    {
+      "objectId": "Shelf|-02.39|+00.24|+06.30",
+      "objectType": "Shelf",
+      "pixels": 5713,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "CoffeeTable|-02.33|+00.00|+04.92",
+      "objectType": "CoffeeTable",
+      "pixels": 5605,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "ArmChair|-04.38|+00.00|+06.02",
+      "objectType": "ArmChair",
+      "pixels": 4228,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Shelf|-02.33|+00.34|+04.92",
+      "objectType": "Shelf",
+      "pixels": 2914,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Shelf|-02.33|+00.09|+04.92",
+      "objectType": "Shelf",
+      "pixels": 2853,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Pillow|-03.15|+00.68|+03.42",
+      "objectType": "Pillow",
+      "pixels": 1126,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Sofa|-02.40|00.00|+03.42"
+      ]
+    },
+    {
+      "objectId": "Box|-03.36|+00.19|+06.43",
+      "objectType": "Box",
+      "pixels": 620,
+      "pickupable": true,
+      "openable": true,
+      "isOpen": true,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    }
+  ]
+}

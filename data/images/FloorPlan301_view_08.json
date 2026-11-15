@@ -1,0 +1,113 @@
+{
+  "image": "FloorPlan301_view_08.png",
+  "scene": "FloorPlan301",
+  "agent": {
+    "position": {
+      "x": 2.25,
+      "y": 0.910415768623352,
+      "z": -0.5
+    },
+    "rotation_y": 180,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "Shelf|+01.80|+01.39|-01.38",
+      "objectType": "Shelf",
+      "pixels": 23516,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Desk|+02.21|+00.01|-01.26",
+      "objectType": "Desk",
+      "pixels": 18106,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Shelf|+02.70|+01.51|-01.38",
+      "objectType": "Shelf",
+      "pixels": 16586,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Shelf|+02.25|+01.50|-01.38",
+      "objectType": "Shelf",
+      "pixels": 15113,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Shelf|+02.48|+00.92|-01.38",
+      "objectType": "Shelf",
+      "pixels": 13631,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Shelf|+02.48|+01.15|-01.38",
+      "objectType": "Shelf",
+      "pixels": 12883,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Shelf|+01.80|+00.92|-01.38",
+      "objectType": "Shelf",
+      "pixels": 7875,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "TissueBox|+02.32|+01.05|-01.38",
+      "objectType": "TissueBox",
+      "pixels": 2117,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Shelf|+02.48|+01.15|-01.38"
+      ]
+    },
+    {
+      "objectId": "Bowl|+02.45|+00.80|-01.21",
+      "objectType": "Bowl",
+      "pixels": 1630,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Desk|+02.21|+00.01|-01.26"
+      ]
+    },
+    {
+      "objectId": "Mug|+02.82|+00.80|-01.22",
+      "objectType": "Mug",
+      "pixels": 1059,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Desk|+02.21|+00.01|-01.26"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "image": "FloorPlan201_view_14.png",
+  "scene": "FloorPlan201",
+  "agent": {
+    "position": {
+      "x": -1.25,
+      "y": 0.9026566743850708,
+      "z": 0.0
+    },
+    "rotation_y": 90,
+    "camera_horizon": 30
+  },
+  "visible_objects": [
+    {
+      "objectId": "Curtains|-00.08|+02.42|+00.97",
+      "objectType": "Curtains",
+      "pixels": 67027,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Floor|+00.00|+00.38|+00.00",
+      "objectType": "Floor",
+      "pixels": 45206,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "FloorLamp|-00.57|+00.00|+00.02",
+      "objectType": "FloorLamp",
+      "pixels": 37580,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Window|-00.06|+00.93|+01.76",
+      "objectType": "Window",
+      "pixels": 22807,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    }
+  ]
+}

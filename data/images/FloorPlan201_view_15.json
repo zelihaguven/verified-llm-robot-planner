@@ -1,0 +1,55 @@
+{
+  "image": "FloorPlan201_view_15.png",
+  "scene": "FloorPlan201",
+  "agent": {
+    "position": {
+      "x": -3.0,
+      "y": 0.9026566743850708,
+      "z": 0.25
+    },
+    "rotation_y": 270,
+    "camera_horizon": 30
+  },
+  "visible_objects": [
+    {
+      "objectId": "Floor|+00.00|+00.38|+00.00",
+      "objectType": "Floor",
+      "pixels": 80418,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "GarbageCan|-04.86|00.00|+00.27",
+      "objectType": "GarbageCan",
+      "pixels": 2714,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Chair|-03.12|+00.02|+01.41",
+      "objectType": "Chair",
+      "pixels": 2156,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "LightSwitch|-03.31|+01.34|-00.32",
+      "objectType": "LightSwitch",
+      "pixels": 713,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    }
+  ]
+}

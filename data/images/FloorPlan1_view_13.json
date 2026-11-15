@@ -1,0 +1,184 @@
+{
+  "image": "FloorPlan1_view_13.png",
+  "scene": "FloorPlan1",
+  "agent": {
+    "position": {
+      "x": -1.0,
+      "y": 0.900999128818512,
+      "z": -0.25
+    },
+    "rotation_y": 90,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "CounterTop|-00.08|+01.15|00.00",
+      "objectType": "CounterTop",
+      "pixels": 71424,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Bread|-00.52|+01.17|-00.03",
+      "objectType": "Bread",
+      "pixels": 11069,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    },
+    {
+      "objectId": "Cabinet|+00.72|+02.02|-02.46",
+      "objectType": "Cabinet",
+      "pixels": 6613,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Book|+00.15|+01.10|+00.62",
+      "objectType": "Book",
+      "pixels": 3627,
+      "pickupable": true,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    },
+    {
+      "objectId": "Cabinet|+00.68|+00.50|-02.20",
+      "objectType": "Cabinet",
+      "pixels": 3466,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Tomato|-00.39|+01.14|-00.81",
+      "objectType": "Tomato",
+      "pixels": 1837,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    },
+    {
+      "objectId": "ShelvingUnit|+01.75|+00.01|-02.56",
+      "objectType": "ShelvingUnit",
+      "pixels": 1779,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Drawer|+00.95|+00.56|-02.20",
+      "objectType": "Drawer",
+      "pixels": 1311,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "CounterTop|+00.69|+00.95|-02.48",
+      "objectType": "CounterTop",
+      "pixels": 1152,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Apple|-00.47|+01.15|+00.48",
+      "objectType": "Apple",
+      "pixels": 1105,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    },
+    {
+      "objectId": "Cabinet|+00.68|+02.02|-02.46",
+      "objectType": "Cabinet",
+      "pixels": 977,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Drawer|+00.95|+00.71|-02.20",
+      "objectType": "Drawer",
+      "pixels": 972,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Drawer|+00.95|+00.83|-02.20",
+      "objectType": "Drawer",
+      "pixels": 962,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Bowl|+00.27|+01.10|-00.75",
+      "objectType": "Bowl",
+      "pixels": 758,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    },
+    {
+      "objectId": "ButterKnife|-00.41|+01.11|-00.46",
+      "objectType": "ButterKnife",
+      "pixels": 687,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ]
+    },
+    {
+      "objectId": "Kettle|+01.04|+00.90|-02.60",
+      "objectType": "Kettle",
+      "pixels": 543,
+      "pickupable": true,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "CounterTop|+00.69|+00.95|-02.48"
+      ]
+    },
+    {
+      "objectId": "Drawer|+00.95|+00.39|-02.20",
+      "objectType": "Drawer",
+      "pixels": 513,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    }
+  ]
+}

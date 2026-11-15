@@ -249,11 +249,19 @@ world.close()
 
 Beklenen çıktı: `success=True ...` ve kupanın yeni konumu `CounterTop|+00.69|+00.95|-02.48`.
 
-Görüntü kaydı (depo kökünden):
+Görüntü kaydı (depo kökünden). Argümansız çalıştırılırsa üç sahne çekilir: `FloorPlan1` (mutfak), `FloorPlan201` (oturma odası) ve `FloorPlan301` (yatak odası):
 
 ```bash
 python -m simulation.ai2thor.capture_images
 ```
+
+Tek sahne için sahne adı verilir:
+
+```bash
+python -m simulation.ai2thor.capture_images FloorPlan301
+```
+
+Her sahne için 15 görüntü `data/images/` altına `<sahne>_view_NN.png` ve aynı adlı `<sahne>_view_NN.json` olarak kaydedilir (ör. `FloorPlan301_view_01.png`). JSON'da ajanın konumu ve yönü ile görüntüde görünen nesnelerin listesi bulunur.
 
 ## 08 Test, deney, metrik ve örnek çıktılar
 

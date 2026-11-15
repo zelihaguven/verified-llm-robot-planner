@@ -1,9 +1,10 @@
 """15 farklı görüş açısından kamera görüntüsü ve o görüntüde görünen nesnelerin listesini kaydeder.
 
 Kullanım (depo kökünden, ai2thor kurulu olmalı):
-    python -m simulation.ai2thor.capture_images
+    python -m simulation.ai2thor.capture_images                 # varsayılan sahneler
+    python -m simulation.ai2thor.capture_images FloorPlan1 FloorPlan301
 
-Çıktı: data/images/view_01.png ve aynı adlı view_01.json (01..15).
+Çıktı: her sahne için data/images/<sahne>_view_01.png ve aynı adlı <sahne>_view_01.json (01..15).
 JSON'daki nesne listesi görüntünün kendisinden gelir: AI2-THOR'un instance segmentation
 çıktısında en az MIN_PIXELS piksel kaplayan nesneler.
 Görüş açıları rastgele değil, "en uzak nokta" yöntemiyle seçilir: her yeni görüntü, seçilmiş
@@ -12,11 +13,12 @@ ve yönlerini kapsar. Sonuç her çalıştırmada aynıdır.
 """
 import json
 import math
+import sys
 from pathlib import Path
 
 from PIL import Image
 
-SCENE = "FloorPlan1"
+DEFAULT_SCENES = ("FloorPlan1", "FloorPlan201", "FloorPlan301")   # mutfak, oturma odası, yatak odası
 NUM_VIEWS = 15
 MIN_VISIBLE_OBJECTS = 4      # çok boş görüntüler atlanır
 MIN_PIXELS = 500             # bundan küçük parçalar "görünür" sayılmaz
@@ -56,38 +58,46 @@ def _pick_diverse(views: list[tuple], count: int) -> list[tuple]:
     return chosen
 
 
-def main() -> None:
-    from ai2thor.controller import Controller
-
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    controller = Controller(scene=SCENE, width=640, height=480, renderInstanceSegmentation=True)
+def capture_scene(controller, scene: str) -> int:
+    """Sahnede NUM_VIEWS farklı görüş seçip kaydeder; kaydedilen sayıyı döndürür."""
+    controller.reset(scene=scene)
 
     def look(spot: dict, yaw: int, horizon: int):
         return controller.step(action="TeleportFull", position=spot, horizon=horizon, standing=True,
                                rotation={"x": 0, "y": yaw, "z": 0})
 
+    spots = controller.step(action="GetReachablePositions").metadata["actionReturn"]
+    views = []                                           # (konum, yaw, eğim, görünen nesneler)
+    for spot in spots:
+        for yaw in YAWS:
+            for horizon in HORIZONS:
+                event = look(spot, yaw, horizon)
+                objects = visible_objects(event) if event.metadata["lastActionSuccess"] else []
+                if len(objects) >= MIN_VISIBLE_OBJECTS:
+                    views.append((spot, yaw, horizon, objects))
+    chosen = _pick_diverse(views, NUM_VIEWS)
+    for number, (spot, yaw, horizon, objects) in enumerate(chosen, start=1):
+        name = f"{scene}_view_{number:02d}"
+        Image.fromarray(look(spot, yaw, horizon).frame).save(OUT_DIR / f"{name}.png")
+        record = {"image": f"{name}.png", "scene": scene,
+                  "agent": {"position": spot, "rotation_y": yaw, "camera_horizon": horizon},
+                  "visible_objects": objects}
+        (OUT_DIR / f"{name}.json").write_text(json.dumps(record, indent=2, ensure_ascii=False),
+                                              encoding="utf-8")
+    return len(chosen)
+
+
+def main(scenes: tuple[str, ...] = DEFAULT_SCENES) -> None:
+    from ai2thor.controller import Controller
+
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    controller = Controller(scene=scenes[0], width=640, height=480, renderInstanceSegmentation=True)
     try:
-        spots = controller.step(action="GetReachablePositions").metadata["actionReturn"]
-        views = []                                       # (konum, yaw, eğim, görünen nesneler)
-        for spot in spots:
-            for yaw in YAWS:
-                for horizon in HORIZONS:
-                    event = look(spot, yaw, horizon)
-                    objects = visible_objects(event) if event.metadata["lastActionSuccess"] else []
-                    if len(objects) >= MIN_VISIBLE_OBJECTS:
-                        views.append((spot, yaw, horizon, objects))
-        for number, (spot, yaw, horizon, objects) in enumerate(_pick_diverse(views, NUM_VIEWS), start=1):
-            name = f"view_{number:02d}"
-            Image.fromarray(look(spot, yaw, horizon).frame).save(OUT_DIR / f"{name}.png")
-            record = {"image": f"{name}.png", "scene": SCENE,
-                      "agent": {"position": spot, "rotation_y": yaw, "camera_horizon": horizon},
-                      "visible_objects": objects}
-            (OUT_DIR / f"{name}.json").write_text(json.dumps(record, indent=2, ensure_ascii=False),
-                                                  encoding="utf-8")
-        print(f"{min(NUM_VIEWS, len(views))} görüntü kaydedildi: {OUT_DIR}")
+        for scene in scenes:
+            print(f"{scene}: {capture_scene(controller, scene)} görüntü kaydedildi: {OUT_DIR}")
     finally:
         controller.stop()
 
 
 if __name__ == "__main__":
-    main()
+    main(tuple(sys.argv[1:]) or DEFAULT_SCENES)

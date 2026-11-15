@@ -1,0 +1,137 @@
+{
+  "image": "FloorPlan301_view_03.png",
+  "scene": "FloorPlan301",
+  "agent": {
+    "position": {
+      "x": -0.75,
+      "y": 0.910415768623352,
+      "z": -1.25
+    },
+    "rotation_y": 0,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "Bed|-00.64|+00.01|+00.87",
+      "objectType": "Bed",
+      "pixels": 32655,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Dresser|-01.33|+00.01|-00.75",
+      "objectType": "Dresser",
+      "pixels": 14143,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "Drawer|-01.31|+01.03|-00.58",
+      "objectType": "Drawer",
+      "pixels": 6129,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Statue|-01.30|+01.24|-00.78",
+      "objectType": "Statue",
+      "pixels": 5858,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Dresser|-01.33|+00.01|-00.75"
+      ]
+    },
+    {
+      "objectId": "Floor|+00.00|+00.00|+00.00",
+      "objectType": "Floor",
+      "pixels": 4246,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Laptop|-00.50|+00.56|+00.29",
+      "objectType": "Laptop",
+      "pixels": 2314,
+      "pickupable": true,
+      "openable": true,
+      "isOpen": true,
+      "parentReceptacles": [
+        "Bed|-00.64|+00.01|+00.87"
+      ]
+    },
+    {
+      "objectId": "Mirror|+01.99|+01.38|+01.88",
+      "objectType": "Mirror",
+      "pixels": 2291,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "AlarmClock|-01.28|+01.24|-00.47",
+      "objectType": "AlarmClock",
+      "pixels": 1882,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Dresser|-01.33|+00.01|-00.75"
+      ]
+    },
+    {
+      "objectId": "Drawer|-01.31|+01.03|-00.92",
+      "objectType": "Drawer",
+      "pixels": 934,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Drawer|-01.31|+00.75|-00.58",
+      "objectType": "Drawer",
+      "pixels": 883,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Book|-00.90|+00.56|+01.18",
+      "objectType": "Book",
+      "pixels": 844,
+      "pickupable": true,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Bed|-00.64|+00.01|+00.87"
+      ]
+    },
+    {
+      "objectId": "Pillow|-00.63|+00.63|+01.61",
+      "objectType": "Pillow",
+      "pixels": 718,
+      "pickupable": true,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Bed|-00.64|+00.01|+00.87"
+      ]
+    }
+  ]
+}

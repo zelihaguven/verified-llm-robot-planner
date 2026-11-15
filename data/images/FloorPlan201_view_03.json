@@ -1,0 +1,68 @@
+{
+  "image": "FloorPlan201_view_03.png",
+  "scene": "FloorPlan201",
+  "agent": {
+    "position": {
+      "x": -4.75,
+      "y": 0.9026566743850708,
+      "z": 5.0
+    },
+    "rotation_y": 0,
+    "camera_horizon": 30
+  },
+  "visible_objects": [
+    {
+      "objectId": "ArmChair|-04.38|+00.00|+06.02",
+      "objectType": "ArmChair",
+      "pixels": 37753,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Floor|+00.00|+00.38|+00.00",
+      "objectType": "Floor",
+      "pixels": 32404,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "TVStand|-02.39|+00.01|+06.30",
+      "objectType": "TVStand",
+      "pixels": 4915,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Box|-03.36|+00.19|+06.43",
+      "objectType": "Box",
+      "pixels": 3932,
+      "pickupable": true,
+      "openable": true,
+      "isOpen": true,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Shelf|-02.39|+00.24|+06.30",
+      "objectType": "Shelf",
+      "pixels": 3322,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    }
+  ]
+}

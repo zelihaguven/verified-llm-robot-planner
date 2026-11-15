@@ -1,0 +1,55 @@
+{
+  "image": "FloorPlan1_view_14.png",
+  "scene": "FloorPlan1",
+  "agent": {
+    "position": {
+      "x": -1.0,
+      "y": 0.900999128818512,
+      "z": 0.75
+    },
+    "rotation_y": 0,
+    "camera_horizon": 30
+  },
+  "visible_objects": [
+    {
+      "objectId": "Floor|+00.00|+00.00|+00.00",
+      "objectType": "Floor",
+      "pixels": 66991,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "Fridge|-02.10|+00.00|+01.07",
+      "objectType": "Fridge",
+      "pixels": 62035,
+      "pickupable": false,
+      "openable": true,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    },
+    {
+      "objectId": "CounterTop|-00.08|+01.15|00.00",
+      "objectType": "CounterTop",
+      "pixels": 8465,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "GarbageCan|-01.94|00.00|+02.03",
+      "objectType": "GarbageCan",
+      "pixels": 3649,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.00|+00.00"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "image": "FloorPlan201_view_13.png",
+  "scene": "FloorPlan201",
+  "agent": {
+    "position": {
+      "x": -1.75,
+      "y": 0.9026566743850708,
+      "z": 5.75
+    },
+    "rotation_y": 90,
+    "camera_horizon": 0
+  },
+  "visible_objects": [
+    {
+      "objectId": "Curtains|-00.08|+02.42|+00.97",
+      "objectType": "Curtains",
+      "pixels": 66739,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Window|-00.06|+01.13|+04.89",
+      "objectType": "Window",
+      "pixels": 40743,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "ArmChair|-00.85|+00.00|+05.98",
+      "objectType": "ArmChair",
+      "pixels": 21846,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    },
+    {
+      "objectId": "Floor|+00.00|+00.38|+00.00",
+      "objectType": "Floor",
+      "pixels": 4935,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": []
+    },
+    {
+      "objectId": "SideTable|-00.25|+00.00|+03.37",
+      "objectType": "SideTable",
+      "pixels": 1217,
+      "pickupable": false,
+      "openable": false,
+      "isOpen": false,
+      "parentReceptacles": [
+        "Floor|+00.00|+00.38|+00.00"
+      ]
+    }
+  ]
+}
