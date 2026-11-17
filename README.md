@@ -29,7 +29,7 @@ Düzenli ilerleme kaydının asıl yeri bu dosyanın [09](#ilerleme) bölümüd�
 | Ad | GitHub | CV |
 | --- | --- | --- |
 | Zeliha Ilgın Güven | [zelihaguven](https://github.com/zelihaguven) | [Zeliha_Ilgin_Guven_CV.pdf](cv/Zeliha_Ilgin_Guven_CV.pdf) |
-| Neslihan Özdemir | [eklenecek] | `cv/` altına `Ad_Soyad_CV.pdf` kuralına göre eklenecek |
+| Neslihan Özdemir | [Neslihan-Ozdemir](https://github.com/Neslihan-Ozdemir) | [Neslihan_Özdemir_Cv.pdf](cv/Neslihan_Özdemir_Cv.pdf) |
 | Tuğba Önen | [eklenecek] | `cv/` altına `Ad_Soyad_CV.pdf` kuralına göre eklenecek |
 | Buse Yılmaz | [eklenecek] | `cv/` altına `Ad_Soyad_CV.pdf` kuralına göre eklenecek |
 
